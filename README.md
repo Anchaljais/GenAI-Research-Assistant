@@ -1,11 +1,15 @@
-[![Watch the demo](https://img.youtube.com/vi/kcW0qQlCPig/0.jpg)](https://www.youtube.com/watch?v=kcW0qQlCPig)
+
+
+
 
 
 
 # 🧠 GenAI Smart Research Summarizer
 
-An AI-powered assistant to read, understand, summarize, and quiz you on uploaded documents (PDF/TXT). Built for the EZ Works GenAI Internship Assignment.
 
+
+An AI-powered assistant to read, understand, summarize, and quiz you on uploaded documents (PDF/TXT). Built for the EZ Works GenAI Internship Assignment.
+[![Watch the demo](https://img.youtube.com/vi/kcW0qQlCPig/0.jpg)](https://www.youtube.com/watch?v=kcW0qQlCPig)
 ---
 
 ## 🔧 Features
