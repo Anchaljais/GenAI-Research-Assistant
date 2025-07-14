@@ -399,8 +399,6 @@
 #                 st.rerun()
 
 
-
-
 import streamlit as st
 import time
 from typing import Dict, List, Tuple, Optional
@@ -498,7 +496,6 @@ st.markdown("""
     .header p {
         font-size: 1.1rem;
         opacity: 0.9;
-        
     }
     
     /* Sidebar styling */
@@ -536,7 +533,7 @@ st.markdown("""
     /* Secondary button */
     .stButton>button.secondary {
         background: white;
-        color: var(--primary);
+        color: var(--);
         border: 1px solid var(--primary);
     }
     
@@ -550,7 +547,7 @@ st.markdown("""
     
     /* Cards/expanders */
     .stExpander {
-        background: var(--card-bg);
+        background: #819A91;
         border-radius: 10px;
         border: 1px solid #e0e0e0;
         box-shadow: 0 2px 4px rgba(0,0,0,0.05);
@@ -759,14 +756,14 @@ if st.session_state.document_text:
             st.metric("Characters", f"{len(st.session_state.document_text):,}")
     
     # Summary section with enhanced styling
-    with st.expander("📝 Summary (≤ 250 words)", expanded=True):
+    with st.expander("📝 Summary (≤ 150 words)", expanded=True):
         st.markdown(f"""
         <div style="
             background: #f8fafc;
             padding: 1.5rem;
             border-radius: 8px;
             border-left: 4px solid var(--accent);
-                    color: #000000; 
+                    color: #2c3e50;  /* Added text color */
         ">
             {st.session_state.summary}
         </div>
@@ -777,6 +774,7 @@ st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
 st.markdown('<h2 class="section-header">📚 Interactive Modes</h2>', unsafe_allow_html=True)
 
 # Mode selection cards
+
 col1, col2 = st.columns(2)
 
 with col1:
@@ -794,6 +792,7 @@ with col2:
         <p style="color: #2c3e50;">Test your understanding with generated questions and get feedback.</p>
     </div>
     """, unsafe_allow_html=True)
+
 # Ask Anything Mode
 st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
 st.markdown('<h2 class="section-header">💬 Ask Anything About the Document</h2>', unsafe_allow_html=True)
